@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="./css/port_con.css">
+</head>
+<body>
+	<!-- s : header -->
+	<header id="header_container">
+		<div class="header_inner">
+			<h1 class="logo"><a href="index.html"><img src="image/logo_cir.png" alt="jieun logo" /></a></h1>
+
+			<nav class="gnb_wrap">
+				<ul>
+					<li><a href="#intro_section">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="#skill_section">skill</a></li>
+					<li><a href="portfolio.html">portfolio</a></li>
+					<li><a href="#contact_section">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- e : header -->
+		<section class="body">
+			<h2 class="title">Identity Design</h2>
+			<div class="content_wrap">
+				<div class="img">
+					<img class="mySlides" src="./image/work09_size.jpg">
+					<img class="mySlides" src="./image/work05.jpg">
+					<img class="mySlides" src="./image/work09_size.jpg">
+					<img class="mySlides" src="./image/logo_cir.png">
+					<button class="btn l" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="btn r" onclick="plusDivs(+1)">&#10095;</button>
+				</div>
+
+					<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					     x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+					</script>
+
+				<div class="txt">
+					<h3 class="tit">Project</h3>
+					<p class="sum">Identity Design</p>
+					<h3 class="tit">Tool</h3>
+					<p class="sum">Illust, Photoshop</p>
+					<h3 class="tit">More</h3>
+					<p class="sum">
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.
+						안녕하세요. 저는 UI디자이너 김지은 입니다. 안녕하세요. 저는 UI디자이너 김지은 입니다.</p>
+
+			</div>
+		</section>
+	<!-- e : body -->
+	<footer id="footer_section">
+			<p class="fot">Copyright ⓒ 2018. Ji-EUN KIM. All right reserved.</p>
+	</footer>
+</body>
+</html>
